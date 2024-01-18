@@ -20,30 +20,6 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 class SpringMysqlApiApplicationTests {
 
-	@Mock
-	WeatherRepository weatherRepository;
-
-	@BeforeEach
-	void setUp() throws Exception{
-
-	}
-
-	@Test
-	final void testGetWeathers(){
-
-
-		when(weatherRepository.findCityTemprature(anyString())).thenReturn(null);
-
-
-
-	}
-
-
-
-
-
-
-
 
 	@Test
 	void contextLoads() {
