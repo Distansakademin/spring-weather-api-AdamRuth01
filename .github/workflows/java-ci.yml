@@ -3,7 +3,7 @@ name: Java CI
 on: [push]
 
 jobs:
-  build:
+  build-and-test:
 
     runs-on: ubuntu-latest
 
@@ -14,8 +14,14 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin' # Eller annan distribution som stöder Java 21 jupp
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{  hashFiles('**/pomxml') }}
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      
       - name: Run program
         run: java -cp target/spring_mysql_api-0.0.1-SNAPSHOT.jar com.example.spring_mysql_api.SpringMysqlApiApplication > output.txt
       - name: Upload output
