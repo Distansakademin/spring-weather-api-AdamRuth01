@@ -58,11 +58,4 @@ public class WeatherController {
     public boolean posSeedWeather(){
       return weatherService.seed();
     }
-
-
-
-
-
-
-
 }
