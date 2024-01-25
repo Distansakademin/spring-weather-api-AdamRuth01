@@ -46,7 +46,7 @@ Feature: Weather api
 
       Then  localhost:8080/weather/humidity/{humidity} to access the humidity you are looking for and where the humidity are located
 
-
+      Scenario: The client will update a weather
 
 
 
