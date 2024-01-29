@@ -59,7 +59,7 @@ public class Weather {
         return temprature;
     }
 
-    public void setTemprature(double temprature) {
+    public void setTemprature() {
         this.temprature = temprature;
     }
 
@@ -72,7 +72,7 @@ public class Weather {
     }
 
     public double getHumidity() {
-        return humidity;
+        return this.humidity;
     }
 
     public void setHumidity(double humidity) {

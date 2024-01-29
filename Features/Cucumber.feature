@@ -46,8 +46,31 @@ Feature: Weather api
 
       Then  localhost:8080/weather/humidity/{humidity} to access the humidity you are looking for and where the humidity are located
 
-      Scenario: The client will update a weather
+      Scenario: The client will (POST) and create a new weather!
+        #The scenario is for function (POST) postWeather()
 
+      Given The client in this case "postman" will create a new weather by change the methode to (POST)
 
+      When The client will add a new weather by write localhost:8080/weather , the client need to chose (body instead  pharams) then click on (raw) and chose (JSON) instead of (text)
+      And write the variabels for each colum but without an (Id), its auto-generated in the database.
 
+      Then in this case the client will click on send, moments later the weather is uploaded in the database.
 
+      Scenario: The client will (PUT) and update an existing weather.
+
+      Given The client  in this case "postman" will update a weather.
+
+      When The client will use (PUT) as methode and localhost:8080/weather/{id} and chose witch  weather information to update by chose the id.
+      And  the client need to chose (body instead  pharams) then click on (raw) and chose (JSON) instead of (text)
+
+      Then The client will recieve true if the update was a succes.
+
+        Scenario: The Client will use (Delete) and delete an existing weather by id.
+          Given The client in this case the "postman" will delete a weather.
+
+          When The client will use (DELETE) as methode and insert chosen id to delete the weather.
+          And write localhost:8080/weather/{id} and the given id to delete the weather from the database.
+
+          Then The client will recieve true if the delete was a succes.
+
+          Scenario: The client has a given function for test 

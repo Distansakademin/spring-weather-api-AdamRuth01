@@ -15,4 +15,4 @@ COPY src src
 RUN ./mvnw package -DskipTests -e
 
 
-CMD ["java", "-jar", "target/spzring_mysql_api 0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/spring_mysql_api-0.0.1-SNAPSHOT.jar"]
