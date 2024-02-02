@@ -234,9 +234,9 @@ The class also has several _getter and setter methods_ for the _instance variabl
 - --
 ## _UML_:
 
-![Uml screenshot1.](img.png)
-![Uml screenshot2.](img_1.png)
-![Uml screenshot3.](img_2.png)
+(![img.png](img.png))
+(![img_1.png](img_1.png))
+
 - --
 ## _Test class_:
 * (__WeatherControllerTests__) has three methods which were built through __TDD and BDD.__ To shape the program and using _(Mock and junit)._ for the safety reasons for development of the program!

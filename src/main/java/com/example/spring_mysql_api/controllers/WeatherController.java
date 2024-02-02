@@ -1,15 +1,13 @@
 package com.example.spring_mysql_api.controllers;
+
 import com.example.spring_mysql_api.exception.MissingForecastException;
 import com.example.spring_mysql_api.models.Weather;
 import com.example.spring_mysql_api.services.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
 @RestController
