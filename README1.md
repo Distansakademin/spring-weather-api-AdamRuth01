@@ -108,7 +108,7 @@ _*Cucumber description*_:
   because the process of using *`Mocking`* was in need of functional flow through the client to the Base
 in order to create the Mock application.properties, I managed to test the first function in the controller. 
  After wards, I developed the whole controller through the test environment.
- Later on, I simplified the test by only having three tests.
+ Later on, I simplified the test by only having five tests.
 ## _How To Use CI/CD_
 ##### -_*(Continuous Integration/Continuous Deployment)*_
 #### _General description of CI/CD functionality_
