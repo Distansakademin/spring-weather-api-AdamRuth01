@@ -47,7 +47,7 @@
 - --
 ## _Description: When You Run The Program_:
 - Check what you are running and watch out for using wrong `spring.datasource.url`
-- 
+
 - In order for auto update, the DataBase automatically use `spring.jpa.hibernate.ddl-auto=update
 - In order for none automatically update use #spring.jpa.hibernate.ddl-auto=create-drop
 
