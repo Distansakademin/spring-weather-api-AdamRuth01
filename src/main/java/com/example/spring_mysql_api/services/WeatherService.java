@@ -28,9 +28,6 @@ public class WeatherService {
     public Iterable<Weather> getByHumi(double humi) {
         return repository.findByHumidity(humi);
     }
-    public Iterable<Weather> getCityTemprature(String city) {
-        return repository.findCityTemprature(city);
-    }
     public Weather getByCity_Id(String city_Id) {
        // int id = Integer.valueOf(city_Id);
         return repository.findById(Integer.valueOf(city_Id));
