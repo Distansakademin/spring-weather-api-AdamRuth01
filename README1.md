@@ -91,7 +91,7 @@ _*Docker description*_:
 - **_Operation of docker_**
 - `Docker is a platform as service, (PaaS) that use (OS) virtualization to deliver software in package and a fully automated the process of deployment lightweight containers so the applications can work efficiently in different environments in isolation.`
 - _**How does DOCKER run the program**_:
-- `To run the docker file you need to create the file and write the commands in the file, also its important that if not change already ois made (the line separator needs to be in "LF") `
+- `To run the docker file you need to create the file and write the commands in the file, also its important that if not change already is made (the line separator needs to be in "LF") `
 - _**Docker (terminal) commands**_:
 - `docker build -t my-java-app .` (Is building the Docker-image)
 - `docker run my-java-app` (Docker run command is staring the container based on your image)
